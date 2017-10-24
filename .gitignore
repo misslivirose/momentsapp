@@ -1,0 +1,6 @@
+*.env
+*.sln
+*.njsproj
+node_modules/
+bin/
+obj/

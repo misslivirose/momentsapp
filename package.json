@@ -1,0 +1,14 @@
+{
+  "name": "moments-app",
+  "version": "0.0.0",
+  "description": "MomentsApp",
+  "main": "server.js",
+  "author": {
+    "name": "liv"
+  },
+  "dependencies": {
+    "azure-storage": "^2.6.0",
+    "dotenv": "^4.0.0",
+    "express": "4.16.2"
+  }
+}
