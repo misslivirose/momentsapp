@@ -4,14 +4,17 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <h1>Moments App</h1>
     <p> What's going on right now? </p>
-        <textarea rows="5" cols="35">
-        </textarea> <br />
-    <input type="range" min="1" max="7" /><br />
-    <button> Save </button>
+    <form action="/send" method="POST">
+        <textarea name="descriptor" rows = "4" cols="50"></textarea> <br />
+        <input type="range" min="1" max="7"  name="happiness"/><br />
+        <input type="submit" value="Save" />  
+    </form>
+        
 </body>
 </html>
