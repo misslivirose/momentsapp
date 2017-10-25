@@ -1,6 +1,19 @@
 ﻿body {
-    background-color: mistyrose
+    background-color: mistyrose;
+    width: 100%;
+    text-align: center;
 }
 h1 {
-    font-family: 'Sacramento', cursive;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300
  }
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+button {
+    font-family: 'Open Sans', sans-serif;
+}
+.input-group {
+    text-align: center;
+    width: 100%;
+}
