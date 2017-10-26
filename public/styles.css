@@ -3,17 +3,62 @@
     width: 100%;
     text-align: center;
 }
+
 h1 {
     font-family: 'Quicksand', sans-serif;
-    font-weight: 300
- }
+    font-weight: 300;
+    width: 100%;
+    font-size: 10em;
+}
+
 p {
     font-family: 'Open Sans', sans-serif;
+    font-size: 5em;
 }
-button {
+
+.button {
     font-family: 'Open Sans', sans-serif;
+    font-size: 5em;
+    width: 25%;
 }
+
 .input-group {
     text-align: center;
     width: 100%;
+}
+
+textarea {
+    width: 95%;
+    font-size: 3em;
+}
+
+.title {
+    margin-bottom: 10px;
+}
+
+.container {
+    margin-top: 5%;
+    padding-top: 5%;
+}
+
+img {
+    width: 100%;
+    margin: 0;
+}
+
+label > input { /* HIDE RADIO */
+    visibility: hidden; /* Makes input not-clickable */
+    position: absolute; /* Remove input from document flow */
+}
+
+    label > input + img { /* IMAGE STYLES */
+        cursor: pointer;
+        border: 2px solid transparent;
+    }
+
+    label > input:checked + img { /* (RADIO CHECKED) IMAGE STYLES */
+        border: 2px solid #f00;
+    }
+label {
+    width: 45%;
 }

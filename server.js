@@ -30,13 +30,13 @@ var entityGenerator = azure.TableUtilities.entityGenerator;
 app.post('/send', function (req, res) {
     var title = req.body.saveAs;
     var text = req.body.descriptor;
-    var rating = req.body.happiness;
+    var rating = req.body.pic;
 
     var task = {
         PartitionKey: entityGenerator.String('emotionEntry'),
         RowKey: entityGenerator.String(title),
         description: entityGenerator.String(text),
-        rating: entityGenerator.Int32(rating)
+        rating: entityGenerator.String(rating)
     };
 
     tableSvc.insertEntity(TABLE_NAME, task, function (error, result, response) {

@@ -4,24 +4,45 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand:300,400" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="input-group">
+    <div class="input-group container">
         <h1>Moments App</h1>
         <p> What's going on right now? </p>
         <form action="/send" method="POST">
-            <textarea name="saveAs" rows="1" cols="50"></textarea><br />
+            <textarea name="saveAs" rows="1" cols="50" class="title"></textarea><br />
             <textarea name="descriptor" rows="4" cols="50"></textarea> <br />
-            <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="10" cy="10" r="10" style="fill: blue" />
-            </svg><br />
             <input type="range" min="1" max="7" name="happiness" /><br />
-            <input type="submit" value="Save" />
+            <label>
+                <input type="radio" name ="pic" value="1" />
+                <img src="/pictures/1.jpg">
+            </label>
+            <label>
+                <input type="radio" name="pic" value="2" />
+                <img src="/pictures/2.jpg">
+            </label>
+            <label>
+                <input type="radio" name="pic" value="3" />
+                <img src="/pictures/3.jpg">
+            </label>
+            <label>
+                <input type="radio" name="pic" value="4" />
+                <img src="/pictures/4.jpg">
+            </label>
+            <label>
+                <input type="radio" name="pic" value="5" />
+                <img src="/pictures/5.jpg">
+            </label>
+            <label>
+                <input type="radio" name="pic" value="6" />
+                <img src="/pictures/6.jpg">
+            </label>
+            <input class="button" type="submit" value="Save" />
         </form>
     </div>
 </body>
