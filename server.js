@@ -3,7 +3,11 @@ var express = require('express');
 var path = require('path');
 var azure = require('azure-storage');
 var bodyParser = require('body-parser');
+var screenfull = require('screenfull');
+
 require('dotenv').config();
+
+if (screenfull.enabled) {screenfull.request()}
 
 var app = express();
 var _port = process.env.PORT || 1337;
@@ -18,6 +22,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({  
     extended: true
 }));
+
+
 
 
 var server = app.listen(app.get('port'), function () {
