@@ -7,7 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day|Quicksand:300,400" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -15,9 +15,8 @@
         <h1>Moments App</h1>
         <p> What's going on right now? </p>
         <form action="/send" method="POST">
-            <textarea name="saveAs" rows="1" cols="50" class="title"></textarea><br />
-            <textarea name="descriptor" rows="4" cols="50"></textarea> <br />
-            <input type="range" min="1" max="7" name="happiness" /><br />
+            <textarea name="saveAs" rows="1" cols="50" class="title">Title</textarea><br />
+            <textarea name="descriptor" rows="4" cols="50">Tell me about it</textarea> <br />
             <label>
                 <input type="radio" name ="pic" value="1" />
                 <img src="/pictures/1.jpg">
