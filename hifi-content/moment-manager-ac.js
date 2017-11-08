@@ -4,7 +4,31 @@
 // 
 var REQUEST_URL = process.env.AZURE_FUNCTIONS_URL;
 var ORIGIN_POINT = { x: 0, y: -10, z: 0 };
-var UPDATE_TIMES = { 0:00, 6:00, 12:00, 18:00 } // Check for updates 4x per day
+
+var COLORS = {
+    DEEP_BLUE: { r: 17, g: 6, b: 89 },
+    MID_BLUE: { r: 90, g: 84, b: 132 },
+    MID_GREEN: { r: 39, g: 117, b: 84 },
+    DEEP_GREEN: { r: 0, g: 88, b: 50 },
+    MID_PINK: { r: 126, g: 45, b: 96 },
+    DEEP_PINK: { r: 103, g: 0, b: 58 }
+};
+
+var ratingMap = {
+    1: DEEP_BLUE,
+    2: MID_BLUE,
+    3: MID_GREEN,
+    4: DEEP_GREEN,
+    5: DEEP_PINK,
+    6: MID_PINK
+};
+
+var BASE_PROPERTIES = {
+    type: "text",
+    text: "placeholder",
+    clientOnly: false,
+    visible: true,
+};
 
 var MOMENTS_BASE_PROPERTIES = {
     type: "text"
